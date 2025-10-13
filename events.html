@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean Boutique | Home</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e63856e856.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header>
+      <nav class="nav-bar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">
+            Bean Boutique <i class="fa-solid fa-mug-hot"></i>
+          </h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./coffee.html" class="nav-link">Coffee Selection</a>
+          </li>
+          <li class="nav-item">
+            <a href="./equipment.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="./events.html" class="nav-link active-page">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="./offers.html" class="nav-link">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a href="./cart.html" class="nav-link">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart (<span id="cart-count">0</span>)
+            </a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Nav Bar -->
+
+    <main>
+      <!-- Events Section -->
+      <section class="events-section section-content">
+        <h2 class="section-title">Upcoming Events & Workshops</h2>
+        <div class="events-grid">
+          <!-- Event 1 -->
+          <div class="event-card">
+            <h3>Coffee Tasting Session</h3>
+            <p class="event-date">
+              <i class="fa-solid fa-calendar"></i> Oct 25, 2025
+            </p>
+            <p class="event-desc">
+              Explore different coffee origins and learn how to distinguish
+              flavor notes like a pro.
+            </p>
+            <button class="register-btn" data-event="Coffee Tasting Session">
+              Register
+            </button>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="event-card">
+            <h3>Brewing Masterclass</h3>
+            <p class="event-date">
+              <i class="fa-solid fa-calendar"></i> Nov 10, 2025
+            </p>
+            <p class="event-desc">
+              Hands-on workshop teaching brewing techniques with French press,
+              pour-over, and AeroPress.
+            </p>
+            <button class="register-btn" data-event="Brewing Masterclass">
+              Register
+            </button>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-card">
+            <h3>Meet the Roaster</h3>
+            <p class="event-date">
+              <i class="fa-solid fa-calendar"></i> Dec 2, 2025
+            </p>
+            <p class="event-desc">
+              Join our head roaster for a behind-the-scenes look into the art of
+              coffee roasting.
+            </p>
+            <button class="register-btn" data-event="Meet the Roaster">
+              Register
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Modal -->
+      <div class="register-modal" id="registerModal">
+        <div class="register-modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h3 id="modalTitle">Register for Event</h3>
+          <form id="registerForm">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="form-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="form-input"
+              required
+            />
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+
+      <footer class="footer-section">
+        <div class="ft-container">
+          <div class="ft-row">
+            <div class="ft-col4">
+              <h4>Bean Boutique</h4>
+              <p>
+                Welcome to Bean Boutique — where every bean tells a story and
+                every cup sparks joy. Taste the art of perfectly brewed coffee!
+              </p>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Quick Links</h4>
+              <!-- <a href="./home.html" class="ft-link">Home</a> -->
+              <a href="./coffee.html" class="ft-link"
+                >Show More Our Coffee Blends</a
+              >
+              <a href="./events.html" class="ft-link"
+                >We have some events for you</a
+              >
+              <a href="./offers.html" class="ft-link"
+                >We have special offers for you
+              </a>
+              <a href="./cart.html" class="ft-link">To Order Now</a>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Contact Information</h4>
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>No 55, Hladen St, Yangon</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@beanboutiquewebsite.com</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>09-77403655, 09-260145726</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Sunday: Closed</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <i class="fa-brands fa-facebook fticon"></i>
+                <i class="fa-brands fa-instagram fticon"></i>
+                <i class="fa-brands fa-twitter fticon"></i>
+                <i class="fa-brands fa-linkedin fticon"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="ft-bottom">
+            <p>© 2025 Bean Boutique | Crafted with ☕ and ❤️</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Coffee Blends -->
+    </main>
+
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+  </body>
+</html>

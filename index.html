@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean Boutique - Home</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e63856e856.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Discount Modal Popup -->
+    <div class="modal" id="discountModal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Welcome to Bean Boutique Coffee Shop</h2>
+        <p>Sign In to Enjoy <strong>10% OFF</strong> your first order</p>
+        <form id="discount-form">
+          <input
+            type="email"
+            id="discount-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="signup-btn">Get Discount</button>
+        </form>
+      </div>
+    </div>
+    <!-- Discount Modal Popup -->
+
+    <!-- Nav Bar -->
+    <header>
+      <nav class="nav-bar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">
+            Bean Boutique <i class="fa-solid fa-mug-hot"></i>
+          </h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link active-page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./coffee.html" class="nav-link">Coffee Selection</a>
+          </li>
+          <li class="nav-item">
+            <a href="./equipment.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="./events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="./offers.html" class="nav-link">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a href="./cart.html" class="nav-link">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart (<span id="cart-count">0</span>)
+            </a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Nav Bar -->
+
+    <main>
+      <!--  Main Section -->
+      <section class="main-section">
+        <div class="section-content main-container">
+          <!-- Left Text -->
+          <div class="main-details">
+            <h2 class="title">Bean Boutique</h2>
+            <h3 class="subtitle">
+              Make your day great with our special coffee!
+            </h3>
+            <p class="description">
+              Welcome to our Bean Boutique coffee paradise, where every bean
+              tells a story and every cup sparks joy.
+            </p>
+
+            <div class="buttons">
+              <a href="./cart.html" class="button explore-beans"
+                >Explore Beans</a
+              >
+              <a href="./coffee.html" class="button events">Events</a>
+            </div>
+          </div>
+
+          <!-- Slideshow -->
+          <div class="img-section">
+            <div class="slideshow" id="slideshow">
+              <div
+                class="slide active"
+                style="background-image: url('./images/slide1.png')"
+              ></div>
+              <div
+                class="slide"
+                style="background-image: url('./images/slide2.png')"
+              ></div>
+              <div
+                class="slide"
+                style="background-image: url('./images/slide5.webp')"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Main Section -->
+
+      <!-- Featured Visual Section -->
+      <section class="visual-section">
+        <div class="section-content">
+          <h2 class="section-title">Discover Our World of Coffee</h2>
+          <p class="section-subtitle">
+            From premium beans to professional brewing tools and vibrant
+            community events — everything you need to fuel your coffee passion.
+          </p>
+          <div class="visual-grid">
+            <div class="visual-item">
+              <img src="./images/image4.jpg" alt="Fresh Coffee Beans" />
+              <h3>Preminum Beans</h3>
+              <p>
+                Crafted for true coffee lovers. We carefully select our beans
+                from the best farms, roast them to perfection. Experience the
+                difference — taste the luxury of Premium Beans.
+              </p>
+              <a href="./coffee.html" class="visual-button">Shop Coffee</a>
+            </div>
+
+            <div class="visual-item">
+              <img src="./images/image3.jpg" alt="Brewing Equipment" />
+              <h3>Expert Brewing</h3>
+              <p>
+                High-quality brewing equipments for a perfect brew every time.
+                Designed for coffer lovers with focus on performance. Brew like
+                an expert, taste the difference.
+              </p>
+              <a href="./equipment.html" class="visual-button">Buy Equipment</a>
+            </div>
+
+            <div class="visual-item">
+              <img src="./images/image5.jpg" alt="Coffee Lovers" />
+              <h3>Join Events</h3>
+              <p>
+                Take part in exciting coffee experiences! There is something for
+                everyone, from tasting sessions to brewing workshops. Learn,
+                connect, and enjoy every moment with fellow coffee enthusiasts.
+              </p>
+              <a href="./events.html" class="visual-button">Join Our Events</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Visual Section -->
+
+      <!-- Visit Us Section -->
+      <section class="visit-us-section">
+        <h2 class="section-title">Visit Our Café</h2>
+        <div class="visit-us-container">
+          <div class="visit-us-info">
+            <h3>Our Café Location</h3>
+            <p>
+              Stop by our cozy café to enjoy freshly brewed coffee and discover
+              our curated selection of beans and brewing equipment.
+            </p>
+            <ul class="visit-us-details">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> No 55, Hladen St,
+                Yangon
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i> Mon–Sat: 9:00 AM – 5:00 PM
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +95 977403655</li>
+            </ul>
+            <a
+              href="https://shorturl.at/OBb1u"
+              target="_blank"
+              class="visit-btn"
+              >Open in Google Maps</a
+            >
+          </div>
+
+          <div class="map-container">
+            <div class="map-overlay"></div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.594245358919!2d96.12772341072325!3d16.826141918664053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194ca13fff6e3%3A0x1334ced7a53c5bbc!2sHledan%20Centre!5e1!3m2!1sen!2smm!4v1760032058507!5m2!1sen!2smm"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer-section">
+        <div class="ft-container">
+          <div class="ft-row">
+            <div class="ft-col4">
+              <h4>Bean Boutique</h4>
+              <p>
+                Welcome to Bean Boutique — where every bean tells a story and
+                every cup sparks joy. Taste the art of perfectly brewed coffee!
+              </p>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Quick Links</h4>
+              <!-- <a href="./home.html" class="ft-link">Home</a> -->
+              <a href="./coffee.html" class="ft-link"
+                >Show More Our Coffee Blends</a
+              >
+              <a href="./events.html" class="ft-link"
+                >We have some events for you</a
+              >
+              <a href="./offers.html" class="ft-link"
+                >We have special offers for you
+              </a>
+              <a href="./cart.html" class="ft-link">To Order Now</a>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Contact Information</h4>
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>No 55, Hladen St, Yangon</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@beanboutiquewebsite.com</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>09-77403655, 09-260145726</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Sunday: Closed</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ft-col4">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <i class="fa-brands fa-facebook fticon"></i>
+                <i class="fa-brands fa-instagram fticon"></i>
+                <i class="fa-brands fa-twitter fticon"></i>
+                <i class="fa-brands fa-linkedin fticon"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="ft-bottom">
+            <p>© 2025 Bean Boutique | Crafted with ☕ and ❤️</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section -->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

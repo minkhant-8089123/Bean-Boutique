@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e63856e856.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header>
+      <nav class="nav-bar section-content">
+        <a href="./index.html" class="nav-logo">
+          <h2 class="logo-text">
+            Bean Boutique <i class="fa-solid fa-mug-hot"></i>
+          </h2>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./coffee.html" class="nav-link">Coffee Selection</a></li>
+          <li><a href="./equipment.html" class="nav-link">Equipment</a></li>
+          <li><a href="./events.html" class="nav-link">Events</a></li>
+          <li><a href="./offers.html" class="nav-link">Offers</a></li>
+          <li>
+            <a href="./cart.html" class="nav-link active-page">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart (<span id="cart-count">0</span>)
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-section" id="cart-section">
+        <h2 class="section-title">Your Shopping Cart</h2>
+        <div class="cart-container">
+          <div id="cartContainer"></div>
+          <div class="cart-summary">
+            <h3 id="totalPrice">Total: $0.00</h3>
+            <button id="checkoutButton">Proceed to Checkout</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer-section">
+      <div class="ft-container">
+        <div class="ft-row">
+          <div class="ft-col4">
+            <h4>Bean Boutique</h4>
+            <p>
+              Welcome to Bean Boutique — where every bean tells a story and
+              every cup sparks joy. Taste the art of perfectly brewed coffee!
+            </p>
+          </div>
+
+          <div class="ft-col4">
+            <h4>Quick Links</h4>
+            <!-- <a href="./home.html" class="ft-link">Home</a> -->
+            <a href="./coffee.html" class="ft-link"
+              >Show More Our Coffee Blends</a
+            >
+            <a href="./events.html" class="ft-link"
+              >We have some events for you</a
+            >
+            <a href="./offers.html" class="ft-link"
+              >We have special offers for you
+            </a>
+            <a href="./cart.html" class="ft-link">To Order Now</a>
+          </div>
+
+          <div class="ft-col4">
+            <h4>Contact Information</h4>
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>No 55, Hladen St, Yangon</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@beanboutiquewebsite.com</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>09-77403655, 09-260145726</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-clock"></i>
+                <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-clock"></i>
+                <p>Sunday: Closed</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ft-col4">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook fticon"></i>
+              <i class="fa-brands fa-instagram fticon"></i>
+              <i class="fa-brands fa-twitter fticon"></i>
+              <i class="fa-brands fa-linkedin fticon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="ft-bottom">
+          <p>© 2025 Bean Boutique | Crafted with ☕ and ❤️</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
