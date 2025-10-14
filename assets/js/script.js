@@ -8,7 +8,7 @@ function updateCartCount() {
 }
 updateCartCount();
 
-// --- Navbar Menu ---
+// --- Navbar Menu -----------------------------------jlkl
 const openMenuButton = document.querySelector("#menu-open-button");
 const closeMenuButton = document.querySelector("#menu-close-button");
 
@@ -18,12 +18,12 @@ openMenuButton.addEventListener("click", () => {
 
 closeMenuButton.addEventListener("click", () => openMenuButton.click());
 
-// Discount Modal Popup
+// Discount Modal Popup--------------------------
 const modal = document.getElementById("discountModal");
 const closeBtn = document.querySelector(".close-btn");
 const form = document.getElementById("discount-form");
 
-// show discount modal only for first time visitors
+// show discount modal only for first time visitors---------------------------
 if (!localStorage.getItem("visited")) {
   this.setTimeout(() => {
     modal.style.display = "flex";
@@ -33,11 +33,13 @@ if (!localStorage.getItem("visited")) {
 // Close modal
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
+  localStorage.setItem("visited", "true");
 });
 
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
+    
   }
 });
 
