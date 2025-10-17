@@ -114,6 +114,12 @@ a {
   max-width: 1500px;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
 /* Nav Bar */
 header {
   background: #1b263b;
@@ -173,6 +179,7 @@ header .nav-bar {
 .main-section {
   padding-top: 120px;
   background-color: #1b263b;
+  height: 100vh;
 }
 
 .main-container {
@@ -221,7 +228,7 @@ header .nav-bar {
   border-radius: 30px;
   border: 2px solid transparent;
   font-weight: 500;
-  transition: background 0.3 ease;
+  transition: 0.3 ease;
 }
 
 .button:hover,
@@ -233,7 +240,7 @@ header .nav-bar {
 
 .events:hover {
   color: #1b263b;
-  border-color: #f3961c;
+  /* border-color: #f3961c; */
   background: #f3961c;
 }
 
@@ -269,17 +276,15 @@ header .nav-bar {
 
 /* visual section */
 .visual-section {
-  /* padding: 80px; */
   background-color: #f9f3ec;
   text-align: center;
 }
 
-.section-title {
+.visual-section .section-title {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 2.2rem;
   color: #4b2e05;
-  margin-bottom: 10px;
   font-weight: 700;
 }
 
@@ -345,9 +350,17 @@ header .nav-bar {
 
 /* Visit Us Section */
 .visit-us-section {
-  padding: 80px 20px;
+  padding: 40px 20px;
   font-family: "Poppins", sans-serif;
   color: #2c2c2c;
+}
+
+.visit-us-section .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4b2e05;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 /* Container layout */
@@ -525,7 +538,6 @@ footer p {
   font-size: 15px;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
   gap: 12px;
@@ -543,7 +555,6 @@ footer p {
   transform: scale(1.2);
 }
 
-/* Bottom Footer */
 .ft-bottom {
   border-top: 1px solid #3a3a3a;
   margin-top: 40px;
@@ -558,52 +569,56 @@ footer p {
 
 /* coffee selection section */
 .coffee-selection-section {
-  padding: 40px 20px;
+  padding: 3rem 2rem;
+  background-color: #f7f3ef;
+  text-align: center;
 }
 
-.coffee-selection-section .page-title {
+.coffee-selection-section .section-title {
   text-align: center;
+  padding-top: 100px;
+  font-size: 2.2rem;
+  color: #4b2e05;
+  font-weight: 700;
 }
 
 /*  Coffee Grid  */
-.coffee-grid {
+.coffee-catalogue {
+  width: 90%;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 35px;
-  margin-top: 30px;
+  /* grid-template-rows: repeat(2, auto); */
+  gap: 20px;
 }
 
 .coffee-card {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 12px;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .coffee-card:hover {
-  transform: translateY(-5px);
-}
-
-.coffee-card img {
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 12px;
-  height: 350px;
-  object-fit: cover;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
 }
 
 .coffee-card h3 {
-  color: #3e2723;
-  text-align: center;
-  margin: 10px 0 5px;
+  margin-top: 0;
+  color: #5d4037;
 }
 
 .coffee-card p {
-  color: #3e2723;
-  font-size: 15px;
-  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.5rem 0;
 }
 
 .brew-method {
@@ -614,6 +629,15 @@ footer p {
   margin: 0.2rem;
   border-radius: 8px;
   font-size: 0.85rem;
+}
+
+.coffee-card img {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  height: 320px;
 }
 
 .price-cart-row {
@@ -645,7 +669,6 @@ footer p {
   background: #4e342e;
 }
 
-/* ===== Search ===== */
 .search-container {
   display: flex;
   justify-content: center;
@@ -669,16 +692,20 @@ footer p {
 }
 
 /* cart page */
-
-/* --- Cart Styles --- */
 .cart-section {
   padding: 40px 20px;
   background: #f8f8f8;
 }
-/* 
+
 .cart-section .section-title {
+  text-align: center;
   padding-top: 100px;
-} */
+  font-size: 2.2rem;
+  color: #4b2e05;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
 .cart-container {
   max-width: 900px;
   margin: auto;
@@ -764,10 +791,19 @@ footer p {
 .equipment-section {
   padding: 40px 20px;
 }
+
+.equipment-section .section-title {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 2.2rem;
+  color: #4b2e05;
+  font-weight: 700;
+}
 .equipment-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-rows: auto;
+  gap: 50px;
   margin-top: 50px;
 }
 
@@ -784,17 +820,20 @@ footer p {
 }
 /* equipment */
 
-/* EVENTS SECTION */
+/* events page */
 .events-section {
   padding: 60px 20px;
-  background: #fafafa;
+  /* background: #fafafa; */
   text-align: center;
 }
 
 .events-section .section-title {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #3e2723;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 2.2rem;
+  color: #4b2e05;
+  margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .events-grid {
@@ -850,7 +889,7 @@ footer p {
   background: #5d4037;
 }
 
-/* MODAL STYLING */
+/* register modal */
 .register-modal {
   display: none;
   position: fixed;
@@ -910,11 +949,20 @@ footer p {
   background: #5d4037;
 }
 
-/* ========== OFFERS SECTION ========== */
+/*  OFFERS SECTION  */
 .offers-section {
   padding: 60px 20px;
   background: #fff9f0;
   text-align: center;
+}
+
+.offers-section .section-title {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 2.2rem;
+  color: #4b2e05;
+  margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .offers-grid {
@@ -1103,15 +1151,16 @@ footer p {
     color: #252525;
     display: block;
     margin-top: 17px;
-    font-size: 1rem;
+    font-size: 16px;
   }
 
-  /* ----- Main Section ----- */
+  /* main section */
   .main-container {
     flex-direction: column;
     text-align: center;
     gap: 50px;
     padding: 40px 20px;
+    /* height: 100vh; */
   }
 
   .main-details {
@@ -1183,6 +1232,33 @@ footer p {
 
   .social-icons {
     justify-content: center;
+  }
+
+  /* Coffee section */
+  .coffee-catalogue {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 18px;
+  }
+
+  .coffee-card {
+    width: 100%;
+  }
+
+  .coffee-card img {
+    height: 280px;
+  }
+
+  /* equipment section */
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 18px;
+  }
+
+  /* events */
+  .events-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1263,4 +1339,22 @@ footer p {
   .ft-bottom p {
     font-size: 12px;
   }
+
+  /* coffee products */
+  .coffee-catalogue {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .coffee-card img {
+    height: 280px;
+  }
+
+  /* equipment */
+  .equipment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* events */
 }

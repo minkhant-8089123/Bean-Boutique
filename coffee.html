@@ -14,36 +14,53 @@
     <!-- Nav Bar -->
     <header>
       <nav class="nav-bar section-content">
-        <a href="./index.html" class="nav-logo">
+        <a href="#" class="nav-logo">
           <h2 class="logo-text">
             Bean Boutique <i class="fa-solid fa-mug-hot"></i>
           </h2>
         </a>
+
         <ul class="nav-menu">
-          <li><a href="./index.html" class="nav-link">Home</a></li>
-          <li>
+          <button id="menu-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
             <a href="./coffee.html" class="nav-link active-page"
               >Coffee Selection</a
             >
           </li>
-          <li><a href="./equipment.html" class="nav-link">Equipment</a></li>
-          <li><a href="./events.html" class="nav-link">Events</a></li>
-          <li><a href="./offers.html" class="nav-link">Offers</a></li>
-          <li>
+          <li class="nav-item">
+            <a href="./equipment.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="./events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="./offers.html" class="nav-link">Offers</a>
+          </li>
+          <li class="nav-item">
             <a href="./cart.html" class="nav-link">
               <i class="fa-solid fa-cart-shopping"></i>
               Cart (<span id="cart-count">0</span>)
             </a>
           </li>
         </ul>
+<<<<<<< HEAD
          <button id="menu-open-button" >
+=======
+
+        <button id="menu-open-button">
+>>>>>>> ed5fc61 (update code)
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
     </header>
 
     <main>
-      <section class="coffee-selection-section section-content">
+      <section class="coffee-selection-section">
         <h1 class="section-title">Our Coffee Blends</h1>
 
         <!-- Search -->
@@ -55,8 +72,7 @@
         </div>
 
         <!-- Coffee Grid -->
-        <div class="coffee-grid" id="coffee-grid">
-          <!-- JS will populate -->
+        <div class="coffee-catalogue" id="coffeeCatalogue">
           <div class="coffee-card" data-name="House Blend" data-price="12.99">
             <img
               src="./assets/images/house-blend-coffee-beans.webp"
@@ -72,7 +88,7 @@
               <!-- <span class="brew-method">Espresso</span> -->
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="12.99">$12.99</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -82,10 +98,14 @@
             data-name="Ethiopian Yirgacheffe"
             data-price="10.99"
           >
+<<<<<<< HEAD
             <img
               src="./assets/images/espresso-blend-coffee-beans.webp"
               alt="Colombian Supremo"
             />
+=======
+            <img src="./images/espresso-blend-coffee-beans.webp" alt="" />
+>>>>>>> ed5fc61 (update code)
             <h3>Ethiopian Yirgacheffe</h3>
             <p>A bright single-origin with floral aroma and citrus notes.</p>
             <p><strong>Tasting Notes:</strong> Citrus, Floral, Tea-like</p>
@@ -95,7 +115,7 @@
               <span class="brew-method">Chemex</span>
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="10.99">$10.99</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -105,10 +125,14 @@
             data-name="Sumatra Mandheling"
             data-price="11.99"
           >
+<<<<<<< HEAD
             <img
               src="./assets/images/breakfast-blend-coffee-beans.webp"
               alt="Sumatra Mandheling"
             />
+=======
+            <img src="./images/breakfast-blend-coffee-beans.webp" alt="" />
+>>>>>>> ed5fc61 (update code)
             <h3>Sumatra Mandheling</h3>
             <p>Full-bodied and earthy, a bold single-origin coffee.</p>
             <p><strong>Tasting Notes:</strong> Earthy, Herbal, Chocolate</p>
@@ -118,7 +142,7 @@
               <span class="brew-method">Espresso</span>
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="11.99">$11.99</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -128,10 +152,14 @@
             data-name="Espresso Blend"
             data-price="13.49"
           >
+<<<<<<< HEAD
             <img
               src="./assets/images/donut-shop-coffee-grounds.webp"
               alt="Guatemalan Antigua"
             />
+=======
+            <img src="./images/holiday-blend-coffee-beans.webp" alt="" />
+>>>>>>> ed5fc61 (update code)
             <h3>Espresso Blend</h3>
             <p>Crafted for a rich and balanced espresso shot.</p>
             <p><strong>Tasting Notes:</strong>Dark Chocolate, Caramel, Smoky</p>
@@ -140,7 +168,7 @@
               <span class="brew-method">Espresso Machine</span>
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="13.49">$13.49</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -150,10 +178,14 @@
             data-name="Colombian Supremo"
             data-price="14.49"
           >
+<<<<<<< HEAD
             <img
               src="./assets/images/holiday-blend-coffee-beans.webp"
               alt="Guatemalan Antigua"
             />
+=======
+            <img src="./images/holiday-blend-coffee-beans.webp" alt="" />
+>>>>>>> ed5fc61 (update code)
             <h3>Colombian Supremo</h3>
             <p>A classic single-origin with a smooth finish.</p>
             <p><strong>Tasting Notes:</strong> Caramel, Red Fruit, Nutty</p>
@@ -163,7 +195,7 @@
               <span class="brew-method">Pour Over</span>
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="14.49">$14.49</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
@@ -173,10 +205,14 @@
             data-name="Mocha-Java Blend"
             data-price="12.40"
           >
+<<<<<<< HEAD
             <img
               src="./assets/images/house-blend-coffee-beans.webp"
               alt="Guatemalan Antigua"
             />
+=======
+            <img src="./images/espresso-blend-coffee-beans.webp" alt="" />
+>>>>>>> ed5fc61 (update code)
             <h3>Mocha-Java Blend</h3>
             <p>A historic blend combining beans from Yemen and Indonesia.</p>
             <p><strong>Tasting Notes:</strong> Winey, Spicy, Rich</p>
@@ -186,7 +222,7 @@
               <span class="brew-method">Pour Over</span>
             </p>
             <div class="price-cart-row">
-              <span class="price" data-price="12.40">$12.40</span>
+              <span class="price" data-price="14.99">$14.99</span>
               <button class="add-to-cart">Add to Cart</button>
             </div>
           </div>
