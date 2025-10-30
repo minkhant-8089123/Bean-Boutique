@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bean Boutique - Home</title>
+    <title>Home</title>
 
-    <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/e63856e856.js"
       crossorigin="anonymous"
@@ -18,11 +15,12 @@
     <!-- Discount Modal Popup -->
     <div class="modal" id="discountModal">
       <div class="modal-content">
-        <span class="close-btn">&times;</span>
+        <span class="close-btn"> <i class="fa-solid fa-xmark"></i> </span>
         <h2>Welcome to Bean Boutique Coffee Shop</h2>
         <p>Sign In to Enjoy <strong>10% OFF</strong> your first order</p>
         <form id="discount-form">
           <input
+            aria-label="Email Address"
             type="email"
             id="discount-email"
             name="email"
@@ -44,10 +42,11 @@
           </h2>
         </a>
 
+        <button id="menu-close-button" aria-label="Close Buttton">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
         <ul class="nav-menu">
-          <button id="menu-close-button">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
           <li class="nav-item">
             <a href="./index.html" class="nav-link active-page">Home</a>
           </li>
@@ -71,7 +70,7 @@
           </li>
         </ul>
 
-       <button id="menu-open-button" >
+        <button id="menu-open-button" aria-label="Open Button">
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
@@ -225,7 +224,6 @@
 
             <div class="ft-col4">
               <h4>Quick Links</h4>
-              <!-- <a href="./home.html" class="ft-link">Home</a> -->
               <a href="./coffee.html" class="ft-link"
                 >Show More Our Coffee Blends</a
               >
@@ -276,7 +274,7 @@
           </div>
 
           <div class="ft-bottom">
-            <p>© 2025 Bean Boutique | Crafted with ☕ and ❤️</p>
+            <p>© 2025 Bean Boutique - Crafted with Our Love.</p>
           </div>
         </div>
       </footer>

@@ -14,7 +14,7 @@ function addToCart(coffee) {
 
 function renderCart() {
   const cartContainer = document.getElementById("cartContainer");
-  if (!cartContainer) return; // safety if cartContainer not found
+  if (!cartContainer) return;
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cartContainer.innerHTML = "";
@@ -24,7 +24,7 @@ function renderCart() {
   if (cart.length === 0) {
     cartContainer.innerHTML = `
       <div style="text-align:center; padding:40px;">
-        <h3>Your cart is empty ☕</h3>
+        <h3>Your cart is empty</h3>
         <p style="color:#555; margin:10px 0;">
           Looks like you haven’t added anything yet.
         </p>
@@ -59,7 +59,7 @@ function renderCart() {
   document.getElementById("totalPrice").textContent =
     "Total: $" + total.toFixed(2);
 
-  // Delete item
+  // Delete item ////////////////////////////////
   document.querySelectorAll(".delete-btn").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const idx = e.target.dataset.index;
@@ -81,7 +81,7 @@ if (checkoutButton) {
   });
 }
 
-// --- Init ---
+// /// Init ////
 renderCart();
 updateCartCount();
 
@@ -94,11 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const name = card.querySelector(".coffee-name").textContent;
       const price = parseFloat(card.querySelector(".price").dataset.price);
-      const image = card.querySelector("img").getAttribute("src"); // 👈 add this
+      const image = card.querySelector("img").getAttribute("src");
 
       const coffee = { name, price, image };
 
-      // Get cart from localStorage or empty
+      // Get cart from localStorage or empty @#$% ////
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
       cart.push(coffee);
 

@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bean Boutique | Home</title>
-
-    <!-- Link CSS -->
+    <title>Equipment</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/e63856e856.js"
       crossorigin="anonymous"
@@ -24,10 +20,11 @@
           </h2>
         </a>
 
+        <button id="menu-close-button" aria-label="Close Button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
         <ul class="nav-menu">
-          <button id="menu-close-button">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
           <li class="nav-item">
             <a href="./index.html" class="nav-link">Home</a>
           </li>
@@ -53,7 +50,7 @@
           </li>
         </ul>
 
-        <button id="menu-open-button" >
+        <button id="menu-open-button" aria-label="Open Button">
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
@@ -65,16 +62,29 @@
       <!-- Brewing Equipment Section -->
       <section class="equipment-section section-content">
         <h2 class="section-title">Brewing Equipment</h2>
+        <p class="section-intro">
+          Explore our curated selection of premium brewing tools - each crafted
+          for quality, precision, and the joy of making coffee at home. Learn
+          how to use each piece to brew your perfect cup.
+        </p>
+
         <div class="equipment-grid">
+          <!-- Espresso Machine -->
           <div class="equipment-card coffee-card">
             <img
               src="./assets/images/declan-cronin-JK187yc6cRU-unsplash.jpg"
               alt="Espresso Machine"
             />
             <h3>Espresso Machine</h3>
-            <p>
-              Perfect for making barista-style coffee at home. Compact and easy
-              to use.
+            <p class="description">
+              Create café-quality espresso shots at home with this compact,
+              stainless-steel machine. Features a powerful steam wand for
+              frothing milk and precise temperature control for consistent
+              extraction.
+            </p>
+            <p class="usage-tips">
+              <strong>Usage Tip:</strong>For the best flavor and creamy crema,
+              use freshly ground beans and preheat your portafilter.
             </p>
             <p class="price">$499</p>
             <button
@@ -85,15 +95,21 @@
             </button>
           </div>
 
+          <!-- French Press -->
           <div class="equipment-card coffee-card">
             <img
               src="./assets/images/ian-lai-7-ugOPRx_sU-unsplash.jpg"
               alt="French Press"
             />
             <h3>French Press</h3>
-            <p>
-              A timeless way to brew rich, aromatic coffee. Easy to clean and
-              durable.
+            <p class="description">
+              A timeless brewing method that brings out rich, full-bodied
+              flavors. Made from durable borosilicate glass with a fine mesh
+              plunger to reduce sediment.
+            </p>
+            <p class="usage-tips">
+              <strong>Usage Tip:</strong> Use coarse grounds and steep for 4
+              minutes for a perfectly balanced brew.
             </p>
             <p class="price">$39</p>
             <button
@@ -104,12 +120,19 @@
             </button>
           </div>
 
+          <!-- Pour Over Kit -->
           <div class="equipment-card coffee-card">
-            <img src="assets/images/image3.jpg" alt="Pour Over Kit" />
+            <img src="./assets/images/image3.jpg" alt="Pour Over Kit" />
             <h3>Pour Over Kit</h3>
-            <p>
-              Includes dripper, filters, and kettle. Control your brew with
-              precision.
+            <p class="description">
+              This all-in-one kit includes a ceramic dripper, precision filters,
+              and a gooseneck kettle — designed for coffee lovers who enjoy
+              control over every variable of their brew.
+            </p>
+            <p class="usage-tips">
+              <strong>Usage Tip:</strong> Pour slowly in a spiral motion and
+              maintain a steady water temperature of 92–96°C for optimal
+              extraction.
             </p>
             <p class="price">$79</p>
             <button
@@ -120,15 +143,21 @@
             </button>
           </div>
 
+          <!-- Coffee Grinder -->
           <div class="equipment-card coffee-card">
             <img
-              src="./assets/images/ana-neves-2ZcPBHbChRk-unsplash.jpg"
+              src="./assets/images/coffee-grinder.jpg"
               alt="Coffee Grinder"
             />
             <h3>Coffee Grinder</h3>
-            <p>
-              Adjustable grind settings for espresso, pour over, or French
-              press.
+            <p class="description">
+              Precision burr grinder with adjustable grind settings for
+              espresso, pour over, or French press. Designed for consistency and
+              minimal heat transfer.
+            </p>
+            <p class="usage-tips">
+              <strong>Usage Tip:</strong> Grind only what you need — freshly
+              ground beans yield the most flavorful results.
             </p>
             <p class="price">$120</p>
             <button
@@ -142,7 +171,6 @@
       </section>
 
       <!-- Footer Section -->
-
       <footer class="footer-section">
         <div class="ft-container">
           <div class="ft-row">
@@ -156,7 +184,6 @@
 
             <div class="ft-col4">
               <h4>Quick Links</h4>
-              <!-- <a href="./home.html" class="ft-link">Home</a> -->
               <a href="./coffee.html" class="ft-link"
                 >Show More Our Coffee Blends</a
               >
@@ -207,12 +234,10 @@
           </div>
 
           <div class="ft-bottom">
-            <p>© 2025 Bean Boutique | Crafted with ☕ and ❤️</p>
+            <p>© 2025 Bean Boutique - Crafted with Our Love.</p>
           </div>
         </div>
       </footer>
-
-      <!-- Coffee Blends -->
     </main>
 
     <script src="assets/js/script.js"></script>

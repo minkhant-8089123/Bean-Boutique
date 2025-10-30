@@ -34,9 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Search when typing
   searchInput.addEventListener("input", filterCoffee);
 
-  // Or when clicking the search button
   searchBtn.addEventListener("click", filterCoffee);
 });

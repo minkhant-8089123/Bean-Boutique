@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unique Coffee Blends</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Plugin -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Typed.js (Animated Text) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <style>
+      :root {
+        --primary: #6b4f4f;
+        --accent: #c69b7b;
+        --bg: #faf6f3;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--bg);
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: var(--primary);
+        color: white;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .typed-text {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: var(--accent);
+      }
+
+      .search-bar {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem auto;
+      }
+
+      .search-bar input {
+        width: 80%;
+        max-width: 400px;
+        padding: 0.75rem 1rem;
+        border: 2px solid var(--accent);
+        border-radius: 2rem;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      .search-bar input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 5px var(--accent);
+      }
+
+      .catalogue {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem 2rem;
+      }
+
+      .card {
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 1rem;
+      }
+
+      .card-content h3 {
+        margin: 0.5rem 0;
+        color: var(--primary);
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: var(--primary);
+        color: white;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.5rem;
+        }
+        .typed-text {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>☕ Unique Coffee Blends</h1>
+      <span class="typed-text"></span>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search for a blend..." />
+    </div>
+
+    <div class="catalogue" id="catalogue">
+      <div class="card" data-aos="fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+          alt="Arabica Gold"
+        />
+        <div class="card-content">
+          <h3>Arabica Gold</h3>
+          <p>Rich aroma with caramel and nutty undertones.</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+          alt="Mocha Velvet"
+        />
+        <div class="card-content">
+          <h3>Mocha Velvet</h3>
+          <p>Dark blend with chocolate and spice hints.</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1464306076886-da185f6a9d0d"
+          alt="Espresso Bold"
+        />
+        <div class="card-content">
+          <h3>Espresso Bold</h3>
+          <p>Strong Italian roast with deep, earthy flavor.</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+          alt="Vanilla Cloud"
+        />
+        <div class="card-content">
+          <h3>Vanilla Cloud</h3>
+          <p>Sweet vanilla aroma with a smooth finish.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Unique Coffee Blends. All rights reserved.</footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // Typed.js Animation
+      new Typed(".typed-text", {
+        strings: [
+          "Discover our finest blends.",
+          "Handcrafted from around the world.",
+          "Sip. Savor. Smile.",
+        ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true,
+      });
+
+      // Live Search Filter
+      const search = document.getElementById("search");
+      const cards = document.querySelectorAll(".card");
+
+      search.addEventListener("keyup", () => {
+        const term = search.value.toLowerCase();
+        cards.forEach((card) => {
+          const name = card.querySelector("h3").textContent.toLowerCase();
+          card.style.display = name.includes(term) ? "block" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

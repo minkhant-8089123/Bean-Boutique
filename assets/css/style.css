@@ -10,7 +10,7 @@
 
 /* Discount Modal Popup */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 9999;
   left: 0;
@@ -80,7 +80,7 @@
   top: 10px;
   right: 15px;
   font-size: 1.8rem;
-  color: #6f4e37; /* coffee brown */
+  color: #6f4e37;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease;
@@ -228,7 +228,6 @@ header .nav-bar {
   border-radius: 30px;
   border: 2px solid transparent;
   font-weight: 500;
-  transition: 0.3 ease;
 }
 
 .button:hover,
@@ -240,7 +239,6 @@ header .nav-bar {
 
 .events:hover {
   color: #1b263b;
-  /* border-color: #f3961c; */
   background: #f3961c;
 }
 
@@ -249,7 +247,6 @@ header .nav-bar {
   flex: 1 1 45%;
 }
 
-/* slideshow */
 .slideshow {
   position: relative;
   width: 100%;
@@ -418,7 +415,7 @@ header .nav-bar {
 /* Button */
 .visit-btn {
   display: inline-block;
-  background-color: #b67c49;
+  background-color: #4b2e05;
   color: #fff;
   text-decoration: none;
   padding: 12px 25px;
@@ -588,7 +585,6 @@ footer p {
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(2, auto); */
   gap: 20px;
 }
 
@@ -759,7 +755,7 @@ footer p {
   margin-bottom: 15px;
 }
 #checkoutButton {
-  background: #4caf50;
+  background: #2e7d32;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -769,7 +765,7 @@ footer p {
   transition: 0.3s;
 }
 #checkoutButton:hover {
-  background: #388e3c;
+  background: #1b5e20;
 }
 
 .btn {
@@ -801,9 +797,9 @@ footer p {
 }
 .equipment-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  gap: 50px;
+  gap: 20px;
   margin-top: 50px;
 }
 
@@ -823,7 +819,6 @@ footer p {
 /* events page */
 .events-section {
   padding: 60px 20px;
-  /* background: #fafafa; */
   text-align: center;
 }
 
@@ -1008,7 +1003,7 @@ footer p {
   background: #6d4c41;
 }
 
-/* ========== SUBSCRIPTION SECTION ========== */
+/* Subscription Section */
 .subscription-section {
   padding: 60px 20px;
   background: #f5f5f5;
@@ -1073,7 +1068,7 @@ footer p {
 }
 
 .subscribe-btn {
-  background: #4caf50;
+  background: #2e7d32;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -1083,10 +1078,9 @@ footer p {
   font-size: 15px;
 }
 .subscribe-btn:hover {
-  background: #388e3c;
+  background: #1b5e20;
 }
 
-/* Highlight Standard Plan */
 .subscription-card.featured {
   border: 2px solid #4caf50;
   background: #e8f5e9;
@@ -1109,23 +1103,27 @@ footer p {
     padding: 15px 20px;
   }
 
-  .nav-bar :where(#menu-close-button, #menu-open-button) {
+  .nav-bar #menu-open-button {
     display: block;
     font-size: 24px;
     color: #fff;
   }
 
   .nav-bar #menu-close-button {
+    display: none;
+    font-size: 24px;
+    color: #fff;
     position: absolute;
     right: 30px;
     top: 30px;
-    color: #1b263b;
   }
 
-  .nav-bar #menu-open-button {
-    background: rgba(0, 0, 0, 0.2);
-    border: none;
-    color: rgb(255, 255, 255);
+  body.show-mobile-menu .nav-bar #menu-open-button {
+    display: none;
+  }
+
+  body.show-mobile-menu .nav-bar #menu-close-button {
+    display: block;
   }
 
   .nav-bar .nav-menu {

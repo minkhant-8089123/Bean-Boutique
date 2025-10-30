@@ -1,8 +1,7 @@
-// Handle "Offer" button clicks
 document.querySelectorAll(".offer-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     alert("Offer applied! Redirecting you to the shop...");
-    window.location.href = "coffee.html"; // redirect to coffee products
+    window.location.href = "coffee.html";
   });
 });
 
